@@ -1,0 +1,15 @@
+{
+  "name": "nodemon-1633-reproduce",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "watch": "nodemon --exec './node_modules/.bin/tsc && node ./dist/index.js'",
+    "watch-then-edit": "yarn watch & (sleep .1 && echo ';' >> src/index.ts)"
+  },
+  "dependencies": {
+    "@types/node": "^12.12.11",
+    "nodemon": "^2.0.1-alpha.1",
+    "typescript": "^3.7.2"
+  }
+}
